@@ -17,7 +17,7 @@ def press_start():
             '\tChoose a game:\n\t'
             'Turtle Racing - 1\n\t'
             'Catch the Cube - 2\n\t'
-            'Collect Coins - 3\n\t'
+            'Painter - 3\n\t'
             'to exit write "exit"\n\t'
         )
         # The user entered an empty string
@@ -42,16 +42,16 @@ def press_start():
             # Game title
             print(text2art(' C A T C H     T H E     C U B E'))
             # My functions
-            from сatch_the_cube.main_cube import start_cube
+            from catch_the_cube.main_cube import start_cube
             # Launch the game
             start_cube()
         elif game == 3:
             # Game title
-            print(text2art('название'))
+            print(text2art(' P A I N T E R'))
             # My functions
-            from turtle_paint.main_painter import s
+            from painter.main_painter import start_painter
             # Launch the game
-            start_cube()
+            start_painter()
         else:
             # Invalid input
             print('\n\tGame not found')

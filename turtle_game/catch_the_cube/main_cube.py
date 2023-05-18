@@ -1,5 +1,5 @@
 #My functions
-from сatch_the_cube.function.function import \
+from turtle_game.catch_the_cube.function.function import \
     draw_screen,\
     create_cube,\
     respawn_cube,\
