@@ -22,5 +22,6 @@ def start_cube():
     # вызываем функцию движения кубиков
     move_cubes(cubes, pen_score, screen)
 
+# Start of the code
 if __name__ == '__main__':
     start_cube()

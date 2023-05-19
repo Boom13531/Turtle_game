@@ -1,5 +1,6 @@
 import turtle
 
+
 def draw_screen():
     # Window
     screen = turtle.Screen()

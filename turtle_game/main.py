@@ -1,13 +1,14 @@
 # Other functions
 from art import text2art
 
-# My functions
-
 
 # Colored text in console
 def color_text():
     return print(f'\033[33;40m')
+
+
 color_text()
+
 
 # Game selection and launch
 def press_start():

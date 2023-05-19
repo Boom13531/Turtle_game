@@ -1,7 +1,7 @@
 # Other functions
 import turtle, random
 #My functions
-from сatch_the_cube.function.cubes import Cubes
+from turtle_game.catch_the_cube.function.cubes import Cubes
 
 def draw_screen():
     # создаем окно
