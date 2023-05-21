@@ -4,7 +4,7 @@ from art import text2art
 
 # Colored text in console
 def color_text():
-    return print(f'\033[33;40m')
+    return print(f'\033[33;40m', end='')
 
 
 color_text()

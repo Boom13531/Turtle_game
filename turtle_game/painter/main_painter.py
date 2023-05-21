@@ -5,6 +5,7 @@ from turtle_game.painter.functions.keys import move_up, move_down, move_left, mo
 from turtle_game.painter.functions.keys import color_edit, pen_up_or_down, pen_fill, clear_screen
 from turtle_game.painter.functions.keys import screen, pen, painter, move
 
+
 # Game start function
 def start_painter():
     # Write information

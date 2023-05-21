@@ -1,26 +1,28 @@
-#My functions
+# My functions
 from turtle_game.catch_the_cube.function.function import \
-    draw_screen,\
-    create_cube,\
-    respawn_cube,\
+    draw_screen, \
+    create_cube, \
+    respawn_cube, \
     move_cubes
 
-def start_cube():
 
+# Game start function
+def start_cube():
     screen, pen_score = draw_screen()
 
-    # функция клика на кубик
+    # function for clicking on the cube
     def click(x, y):
         respawn_cube(x, y, cubes, pen_score, screen)
 
-    # обработчик кликов мыши
+    # mouse click handler
     screen.onclick(click)
 
-    # вызываем функцию создания кубика
+    # call the function to create the cube
     cubes = create_cube()
 
-    # вызываем функцию движения кубиков
+    # call the function to move the cubes
     move_cubes(cubes, pen_score, screen)
+
 
 # Start of the code
 if __name__ == '__main__':

@@ -2,8 +2,10 @@
 import turtle
 import random
 
-# Class for game cubes
+
 class Cubes(turtle.Turtle):
+    '''Class for game cubes'''
+
     def __init__(self):
         super().__init__(shape='square')
         self.color('red', 'yellow')
@@ -13,24 +15,23 @@ class Cubes(turtle.Turtle):
         # Random goto (x coordinate from -240 to 240, y coordinate = 300)
         self.goto(random.randint(-240, 240), 300)
 
-
+    # Game function
     def run(self, pen_score, screen):
-
         self.goto(self.xcor(), self.ycor() - self.speed())
-        # проверяем, если кубик коснулся границы
+        # Check if cube has touched the boundary
         if self.ycor() <= -140:
             pen_score.clear()
             pen_score.goto(-250, -200)
-            pen_score.write("Ира окончена счёт: {}".format(screen.score), align="left", font=("Arial", 30, "normal"))
+            pen_score.write(f"Ира окончена счёт: {screen.score}", align="left", font=("Arial", 30, "normal"))
             pen_score.penup()
             turtle.exitonclick()
 
 
-# функция создания кубика
+# Function for creating a cube
 def create_cube():
     cube1 = Cubes()
     cube2 = Cubes()
-    # создаем список кубиков
+    # Create a list of cubes
     cubes = list()
     cubes.append(cube1)
     cubes.append(cube2)

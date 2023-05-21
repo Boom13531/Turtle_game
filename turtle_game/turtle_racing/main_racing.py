@@ -17,7 +17,7 @@ information = ['Turtle Racing!',
                'To start the game, click the mouse button.']
 
 
-# Main start function
+# Game start function
 def start_main_racing():
     # Create window and starting/finishing line
     screen, pen_t = draw_screen()

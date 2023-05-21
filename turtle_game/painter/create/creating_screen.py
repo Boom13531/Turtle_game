@@ -8,7 +8,7 @@ def create():
     screen.setup(width=600, height=600)
     turtle.screensize(canvwidth=400, canvheight=400,
                       bg="light steel blue")
-    screen.title("Turtle painter")
+    screen.title("Painter")
     # Creating a player (painter)
     painter = turtle.Turtle()
     painter.hideturtle()

@@ -5,7 +5,7 @@ def draw_screen():
     # Window
     screen = turtle.Screen()
     screen.score = 0
-    screen.title("Turtle Races")
+    screen.title("Turtle Racing")
     screen.bgcolor("white")
     screen.setup(width=1000, height=600)
     turtle.screensize(canvwidth=400, canvheight=400, bg="light steel blue")
